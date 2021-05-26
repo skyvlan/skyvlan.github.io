@@ -2,34 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/jquery-3.3.1.slim.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Hello World</title>
 </head>
+<script>
+    $(document).ready(function(){
+        var col1clicked = 0
+        var col2clicked = 0
+        var col3clicked = 0
+        var col4clicked = 0
+        var col5clicked = 0
+        $("#aboutBtn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#aboutPage").offset().top
+            }, 1000);
+        })
+        $("#skillBtn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#skillPage").offset().top
+            }, 1000);
+        })
+        $("#projectBtn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#projPage").offset().top
+            }, 1000);
+        })
+        $("#achvmntBtn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#achvmntPage").offset().top
+            }, 1000);
+        })
+        $("#contactBtn").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#contactPage").offset().top
+            }, 1000);
+        })
+        $("#col1").click(function () {
+           col1clicked++
+           if(col1clicked%2){
+               $('#col1').text("-    General Purpose Programming Languages ")
+           }
+           else{
+               $('#col1').text("+    General Purpose Programming Languages ")
+           }
+        })
+        $("#col2").click(function () {
+            col2clicked++
+            if(col2clicked%2){
+                $('#col2').text("-    Web Development Programming Languages ")
+            }
+            else{
+                $('#col2').text("+    Web Development Programming Languages ")
+            }
+        })
+        $("#col3").click(function () {
+            col3clicked++
+            if(col3clicked%2){
+                $('#col3').text("-    Other Technical Knowledges")
+            }
+            else{
+                $('#col3').text("+    Other Technical Knowledges")
+            }
+        })
+        $("#col4").click(function () {
+            col4clicked++
+            if(col4clicked%2){
+                $('#col4').text("-    General Purpose Programming Languages ")
+            }
+            else{
+                $('#col4').text("+    General Purpose Programming Languages ")
+            }
+        })
+        $("#col5").click(function () {
+            col5clicked++
+            if(col4clicked%2){
+                $('#col5').text("-    General Purpose Programming Languages ")
+            }
+            else{
+                $('#col5').text("+    General Purpose Programming Languages ")
+            }
+        })
+        
 
+    });
+
+</script>
 <body>
     <div class="topnav">
         <div class="skyvlanLogo"><div id="logoText">*skyvlan</div></div>
-        <a href="#about">About</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Achievements">Achievements</a>
-        <a href="#Contacts">Contacts</a>
+        <a href="#about" id="aboutBtn">About</a>
+        <a href="#Skills" id="skillBtn">Skills</a>
+        <a href="#Projects" id="projectBtn">Projects</a>
+        <a href="#Achievements" id="achvmntBtn">Achievements</a>
+        <a href="#Contacts"id="contactBtn">Contacts</a>
     </div>
     <div class="Contents">
         <div class="separatorLine"></div>
-        <div class="about">
+        <div class="about" id="aboutPage">
             <div class="SectionTitle">Hello World</div>
             <div class="TextContent"><p>Hello World, my name is Radya, also known as *skyvlan. I’m a Computer Science student currently studying in Bina Nusantara University. </p> <p>I’m really passionate about Technology and it’s Development. Programming has been my hobby since i was in middle school, i also enjoy playing Games and Hacking </p> In the past 6 years i’ve been learning C++, C#, Python, PHP, HTML, Java, Javascript and CSS. and i’m eager to learn new skills to expand my Portfolio.</div>
         </div>
-        <div class="skills">
+        <div class="skills" id="skillPage">
             <div class="SectionTitle">Skills & Knowledge</div>
             <div class="CollapsibleTexts">
-                <a  data-toggle="collapse" href="#skill1" role="button" aria-expanded="true" aria-controls="skill1">+    General Purpose Programming Languages </a><br>
+                <a  data-toggle="collapse" href="#skill1" role="button" aria-expanded="true" aria-controls="skill1" id="col1">+    General Purpose Programming Languages </a><br>
                 <div class="collapse" id="skill1">
                     <div class="skill1-contents">
                         <div class="skillBox">
@@ -49,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <a  data-toggle="collapse" href="#skill2" role="button" aria-expanded="true" aria-controls="skill2">+    Web Development Programming Languages</a><br>
+                <a  data-toggle="collapse" href="#skill2" role="button" aria-expanded="true" aria-controls="skill2" id="col2">+    Web Development Programming Languages</a><br>
                 <div class="collapse" id="skill2">
                     <div class="skill2-contents">
                         <div class="skillBox">
@@ -69,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <a  data-toggle="collapse" href="#skill3" role="button" aria-expanded="true" aria-controls="skill3">+    Other Technical Knowledges</a><br>
+                <a  data-toggle="collapse" href="#skill3" role="button" aria-expanded="true" aria-controls="skill3" id="col3">+    Other Technical Knowledges</a><br>
                 <div class="collapse" id="skill3">
                     <div class="skill3-contents">
                         <div class="skillBox">
@@ -95,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <a  data-toggle="collapse" href="#skill4" role="button" aria-expanded="true" aria-controls="skill4">+    Languages</a><br>
+                <a  data-toggle="collapse" href="#skill4" role="button" aria-expanded="true" aria-controls="skill4" id="col4">+    Languages</a><br>
                 <div class="collapse" id="skill4">
                     <div class="skill4-contents">
                         <div class="skillBox">
@@ -112,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <a  data-toggle="collapse" href="#skill5" role="button" aria-expanded="true" aria-controls="skill5">+    Other Software Skills</a><br>
+                <a  data-toggle="collapse" href="#skill5" role="button" aria-expanded="true" aria-controls="skill5" id="col5">+    Other Software Skills</a><br>
                 <div class="collapse" id="skill5">
                     <div class="skill5-contents">
                         <div class="skillBox">
@@ -134,46 +215,46 @@
 
             </div>
         </div>
-        <div class="Projects">
+        <div class="Projects" id="projPage">
             <div class="SectionTitle">Projects</div>
             <div class="ProjectBox">
                 <div class="ProjectTitle">Thermometer Scale Calculator</div>
                 <div class="ProjectLang">C</div>
                 <div class="ProjectDate">2016</div>
-                <a href="#test" class="ProjectLink">Link</a>
+                <a href="https://pastebin.com/AUw8J4WB" class="ProjectLink">Link</a>
             </div>
             <div class="ProjectBox">
                 <div class="ProjectTitle">Soundcloud Support for Geometry Dash</div>
                 <div class="ProjectLang">PHP HTML CSS MySQL</div>
                 <div class="ProjectDate">2016</div>
-                <a href="#test" class="ProjectLink">Link</a>
+                <a href="https://github.com/skyvlan/GD-SoundcloudSupport" class="ProjectLink">Link</a>
             </div>
             <div class="ProjectBox">
                 <div class="ProjectTitle">Geometry Dash Gamedata Decoder</div>
                 <div class="ProjectLang">C#</div>
                 <div class="ProjectDate">2017</div>
-                <a href="#test" class="ProjectLink">Link</a>
+                <a href="https://pastebin.com/LmSWagKU" class="ProjectLink">Link</a>
             </div>
             <div class="ProjectBox">
                 <div class="ProjectTitle">HAPIHware</div>
                 <div class="ProjectLang">C++</div>
                 <div class="ProjectDate">2017-2018</div>
-                <a href="#test" class="ProjectLink">Link</a>
+                <a href="https://github.com/skyvlan/HAPIHware" class="ProjectLink">Link</a>
             </div>
             <div class="ProjectBox">
                 <div class="ProjectTitle">CursesHangmanPy</div>
                 <div class="ProjectLang">Python</div>
                 <div class="ProjectDate">2019</div>
-                <a href="#test" class="ProjectLink">Link</a>
+                <a href="https://github.com/skyvlan/CursesHangmanPy" class="ProjectLink">Link</a>
             </div>
             <div class="ProjectBox">
                 <div class="ProjectTitle">W3Schools Crawler</div>
                 <div class="ProjectLang">Python</div>
                 <div class="ProjectDate">2020</div>
-                <a href="#test" class="ProjectLink">Link</a>
+                <a href="https://gist.github.com/skyvlan/f9793297ae9c319ac8744806e5bc15f8" class="ProjectLink">Link</a>
             </div>
         </div>
-        <div class="Achievements">
+        <div class="Achievements" id="achvmntPage">
             <div class="SectionTitle">Achievements</div>
             <div class="AchievementBox">
                 <div class="AchievementTitle">Indonesia National Contest 2019</div>
@@ -218,7 +299,7 @@
                 <div class="AchievementRank">Participant</div>
             </div>
         </div>
-        <div class="Contacts">
+        <div class="Contacts" id="contactPage">
             <div class="SectionTitle">Contact Me</div>
             <div class="TextContent">Discord: *skyvlan#6513</div>
             <div class="TextContent">Line: radyaak02</div>
@@ -232,6 +313,7 @@
             <div class="TextContent">Copyright (c) 2021 Radya A  ALL RIGHTS RESERVED</div>
 
         </div>
+
     </div>
 
 </body>
