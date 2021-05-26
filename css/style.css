@@ -1,0 +1,253 @@
+body {
+    background-color: #222129;
+}
+
+.topnav{
+    font-family: "Fira Code";
+
+}
+
+.topnav a{
+    position: relative;
+    left: 236px;
+    bottom: 55px;
+    font-family: "Fira Code";
+    padding: 24px 24px;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+.skyvlanLogo{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 211px;
+    height: 64px;
+    font-size: 36px;
+    background: #92DEA5;
+}
+
+#logoText{
+    position: absolute;
+    width: 179px;
+    height: 44px;
+    top:    5px;
+    left:   16px;
+}
+.about{
+    position: absolute;
+    width: 712.25px;
+    height: 318px;
+    top:192px;
+    left: 108.32px;
+}
+.SectionTitle{
+    font-family: "Fira Code";
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+}
+
+.TextContent{
+    font-family: "Fira Code";
+    font-size: 18px;
+    color: white;
+}
+.CollapsibleTexts{
+    font-family: "Fira Code";
+    font-size: 36px;
+    color: white;
+}
+.CollapsibleTexts a{
+    color: white;
+}
+.separatorLine{
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 75px;
+
+    border: 4px dashed #92DEA5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.skills{
+    position: relative;
+    top: 512px;
+    left: 108.32px;
+
+}
+.skill1-contents{
+    width: 819px;
+    height: 250px;
+}
+.skill2-contents{
+    width: 819px;
+    height: 250px;
+}
+.skill3-contents{
+    width: 1096px;
+    height: 250px;
+}
+.skill4-contents{
+    width: 819px;
+    height: 200px;
+}
+.skill5-contents{
+    width: 819px;
+    height: 200px;
+}
+
+
+.skillBox{
+    width: 273.86px;
+    height: 63px;
+    float: left;
+    border: 1px dashed #92DEA5;
+    text-align: left;
+    font-size: 2.25vmin;
+    padding-left: 20px;
+    margin-left: 28px;
+    margin-top: 18px;
+}
+.Projects{
+    position: relative;
+    top: 600px;
+    left: 108.32px;
+}
+
+.ProjectBox{
+    position: relative;
+    width: 701.01px;
+    height: 213px;
+    border: 2px dashed #92DEA5;
+    margin-top: 23px;
+}
+
+.ProjectTitle{
+    position: absolute;
+    width: 677px;
+    height: 100px;
+    top: 13px;
+    left: 18px;
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.ProjectLang{
+    position: absolute;
+    width: 512px;
+    height: 46px;
+    top:123px;
+    left: 18px;
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.ProjectDate{
+    position: absolute;
+    width: 221px;
+    height: 46px;
+    top: 163px;
+    left: 18px;
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.ProjectLink{
+    position: absolute;
+    width: 102px;
+    height: 46px;
+    background-color: #92DEA5;
+    left:500px;
+    top: 157px;
+    font-family: "Fira Code";
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.ProjectLink a{
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.Achievements{
+    position: relative;
+    top: 700px;
+    left: 108.32px;
+}
+
+.AchievementBox{
+    position: relative;
+    width: 701.01px;
+    height: 213px;
+    border: 2px dashed #92DEA5;
+    margin-top: 23px;
+
+}
+
+.AchievementTitle{
+    position: absolute;
+    width: 643px;
+    height: 102px;
+    top: 23px;
+    left: 39px;
+
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.AchievementYear{
+    position: absolute;
+    width: 93px;
+    height: 39px;
+    top: 151px;
+    left: 39px;
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.AchievementType{
+    position: absolute;
+    width: 198px;
+    height: 18px;
+    top: 175px;
+    left: 137px;
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.AchievementRank{
+    position: absolute;
+    width: 257px;
+    height: 39px;
+    top: 151px;
+    left: 425px;
+
+    font-family: "Fira Code";
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+
+.Contacts{
+    position: relative;
+    top:800px;
+    left: 108.32px;
+}
